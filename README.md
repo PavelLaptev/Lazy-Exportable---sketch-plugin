@@ -12,7 +12,7 @@ You can choose a lazy way by selecting the type of layers like groups, shapes, s
 ### Or not so lazy
 If you call your layers semantically, the plugin will allow you to select them manually by name. 
 
-Also possible to choose layers by the flag.***^***
+Also possible to choose layers by the suffix***^***
 
 
 
