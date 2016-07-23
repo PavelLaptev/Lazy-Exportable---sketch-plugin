@@ -1,5 +1,5 @@
 ![Cover](https://dl.dropboxusercontent.com/s/saot0qre0x9rtys/cover.png?dl=0)
-# Lazy exportable — Sketch pluggin
+# Lazy exportable — Sketch plugin
 
 **If you are lazy or you have no time to manually make the layers exportable for developers - this plugin is for you.**
 
