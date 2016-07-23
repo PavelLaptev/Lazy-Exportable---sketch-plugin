@@ -1,3 +1,5 @@
+[![GitHub release](https://img.shields.io/badge/release-1.0-green.svg?maxAge=2592000)](https://github.com/PavelLaptev/Lazy-Exportable---sketch-plugin/releases)
+
 ![Cover](https://dl.dropboxusercontent.com/s/saot0qre0x9rtys/cover.png?dl=0)
 # Lazy exportable — Sketch plugin
 
@@ -7,7 +9,7 @@
 
 # How it works
 ### Lazy way
-You can choose a lazy way by selecting the type of layers like groups, shapes, symbols, text layers and bitmaps.
+You can choose a lazy way by selecting the type of layers like groups, shapes, symbols, text layers and bitmaps. Sketch version 3.8+
 
 ### Or not so lazy
 If you call your layers semantically, the plugin will allow you to select them manually by name. 
@@ -21,7 +23,7 @@ Also possible to choose layers by the suffix***^***
 
 ![Gif preview](https://dl.dropboxusercontent.com/s/8v7rfyrforcjlfr/type-choice-two.gif?dl=0)
 
-**Export artboards to collaboration tool**
+**Export artboards to collaboration tool** zeplin for example
 
 ![Gif preview](https://dl.dropboxusercontent.com/s/ivsx8ijk4dlis3n/export-artboard.gif?dl=0)
 
