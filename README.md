@@ -1,11 +1,11 @@
-[![GitHub release](https://img.shields.io/badge/release-1.0-green.svg?maxAge=2592000)](https://github.com/PavelLaptev/Lazy-Exportable---sketch-plugin/releases)
+[![GitHub release](https://img.shields.io/badge/release-2.0-orange.svg)](https://github.com/PavelLaptev/Lazy-Exportable---sketch-plugin/releases)
 
 ![Cover](https://dl.dropboxusercontent.com/s/saot0qre0x9rtys/cover.png?dl=0)
 # Lazy exportable — Sketch plugin
 
 **If you are lazy or you have no time to manually make the layers exportable for developers - this plugin is for you.**
 
-![Dialog preview](https://dl.dropboxusercontent.com/s/ke3ixotufrm1b04/dialog.jpg?dl=0)
+![Dialog preview](https://dl.dropboxusercontent.com/s/o2d4iv3bgmsitq1/windows.jpg?dl=0)
 
 # How it works
 ### Lazy way

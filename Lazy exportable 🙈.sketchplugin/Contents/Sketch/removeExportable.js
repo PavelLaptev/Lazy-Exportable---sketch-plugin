@@ -7,6 +7,16 @@ var onRun = function(context) {
 
 	var flag = ( flag === false ) ? NSOffState : NSOnState;
 
+	var checkboxArtboards = NSButton.alloc().initWithFrame( NSMakeRect( 0, 0, 300, 18 ) );
+	checkboxArtboards.setButtonType( NSSwitchButton );
+	checkboxArtboards.setTitle( 'Artboards' );
+	checkboxArtboards.setState( true );
+
+	var checkboxShapes = NSButton.alloc().initWithFrame( NSMakeRect( 0, 0, 300, 18 ) );
+	checkboxShapes.setButtonType( NSSwitchButton );
+	checkboxShapes.setTitle( 'Artboards' );
+	checkboxShapes.setState( true );
+
 	var checkboxShapes = NSButton.alloc().initWithFrame( NSMakeRect( 0, 0, 300, 18 ) );
 	checkboxShapes.setButtonType( NSSwitchButton );
 	checkboxShapes.setTitle( 'Shapes' );
@@ -38,17 +48,18 @@ var onRun = function(context) {
 	checkboxSuffix.setState( false );
 
 	var userInput = COSAlertWindow.new();
+	userInput.addAccessoryView(checkboxArtboards);
 	userInput.addAccessoryView(checkboxGroups);
 	userInput.addAccessoryView(checkboxShapes);
 	userInput.addAccessoryView(checkboxSymbols);
 	userInput.addAccessoryView(checkboxText);
 	userInput.addAccessoryView(checkboxBitmaps);
 	userInput.addAccessoryView(checkboxSuffix);
-	userInput.setMessageText('Exportable what?');
+	userInput.setMessageText('Remove Exportable');
 	userInput.addTextLabelWithValue("Exportable by name:");
 	userInput.addTextFieldWithValue("");
 
-	userInput.addButtonWithTitle('Make it')
+	userInput.addButtonWithTitle('Destroy!')
 	userInput.addButtonWithTitle('Not today')
 	var responseCode = userInput.runModal();
 
@@ -62,7 +73,7 @@ var onRun = function(context) {
 		var loop = layers.objectEnumerator(), layer;
 		while (layer = loop.nextObject()) {
 			layer.select_byExpandingSelection(true, true);
-			layer.exportOptions().addExportFormat();
+			layer.exportOptions().removeAllExportFormats();
 		}
 
 		log(layers.count() + " " + layerType + "s selected ")
@@ -73,6 +84,9 @@ var onRun = function(context) {
 
 		doc.currentPage().deselectAllLayers();
 
+		if ( checkboxArtboards.state() == true ) {
+			selectLayersOfType_inContainer("MSArtboardGroup");
+		}
 		if ( checkboxGroups.state() == true ) {
 			selectLayersOfType_inContainer("MSLayerGroup");
 		}

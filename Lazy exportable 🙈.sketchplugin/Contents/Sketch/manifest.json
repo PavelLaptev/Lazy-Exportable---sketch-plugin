@@ -1,22 +1,30 @@
 {
-    "name" : "Lazy exportable 🙈",
-    "version" : "1.0",
-    "description" : "For lazy designers who don't care.",
-    "authorEmail" : "graphics.dario@gmail.com",
-    "author" : "Laptev Pavel",
-    "commands" : [
-        {
-            "script" : "lazy-exportable.js",
-            "handler" : "onRun",
-            "shortcut" : "cmd ctrl e",
-            "name" : "Lazy exportable 🙈",
-            "identifier" : "Lazy-exportable"
-        }
-    ],
-    "menu": {
-        "isRoot": true,
-        "items": [
-            "Lazy-exportable"
-        ]
-    }
+	"name" : "Lazy exportable 🙈",
+	"version" : "1.0",
+	"description" : "For lazy designers who don't care.",
+	"authorEmail" : "graphics.dario@gmail.com",
+	"author" : "Laptev Pavel",
+	"commands" : [
+		{
+			"script" : "makeExportable.js",
+			"handler" : "onRun",
+			"shortcut" : "cmd ctrl e",
+			"name" : "make Exportable",
+			"identifier" : "makeExportable"
+		},
+		{
+			"script" : "removeExportable.js",
+			"handler" : "onRun",
+			"shortcut" : "cmd alt ctrl e",
+			"name" : "remove Exportable",
+			"identifier" : "removeExportable"
+		}
+	],
+	"menu" : {
+	"items" : [
+		"makeExportable",
+		"removeExportable"
+	],
+	"title" : "Lazy Exportable 🙈"
+	}
 }
